@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
@@ -57,9 +57,7 @@
 <div class="columns medium-7 u-nowrap">
 <div class="siteHeader-logo">
 <a href="https://houseclean.online/">
-<svg>
-<use xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-full"></use>
-</svg>
+<span class="logo"></span>
 </a>
 </div>
 <ul id="menu-header-navigation" class="nav-list-desktop"><li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16"><a href="/услуги/">Услуги</a></li>
@@ -74,7 +72,7 @@
 <a class="js-nav-mobile-toggle nav-mobile-toggle" href="#"><span class="menu-icon"></span></a>
 <div class="nav-mobile-overlay js-nav-mobile-toggle"></div>
 <div class="nav-mobile-wrapper">
-<a class="siteHeader-phone siteHeader-phone--mobile js-amplitude-click" data-amplitude-location="mobile_nav" data-amplitude-name="Clicked Phone Number" href="tel:0951453184">
+<a class="siteHeader-phone siteHeader-phone--mobile js-amplitude-click" data-amplitude-location="mobile_nav" data-amplitude-name="Clicked Phone Number" href="tel:+380951453184">
 <img src="/static/phonewhite.svg" alt="Телефон" width="16" height="16" style="display: block; float: left; position: left; margin-top: 10px; margin-right: 6px;"/>
 095 145 31 84
 </a>
@@ -108,9 +106,7 @@
 <div class="columns medium-7 u-nowrap">
 <div class="siteHeader-logo">
 <a href="https://houseclean.online/">
-<svg>
-<use xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-full"></use>
-</svg>
+<span class="logoDark"></span>
 </a>
 </div>
 <ul id="menu-header-navigation-1" class="nav-list-desktop"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16"><a href="https://houseclean.online/features/">Услуги</a></li>
@@ -126,7 +122,7 @@
 </div>
 <div class="columns medium-5">
 <div class="siteHeader-right show-for-large-only">
-<a class="siteHeader-phone js-amplitude-click" data-amplitude-location="sticky_nav" data-amplitude-name="Clicked Phone Number" href="tel:0951453184">
+<a class="siteHeader-phone js-amplitude-click" data-amplitude-location="sticky_nav" data-amplitude-name="Clicked Phone Number" href="tel:+380951453184">
 <img src="/static/phoneblack.svg" alt="Телефон" width="16" height="16" style="display: block; float: left; position: left; margin-top: 10px; margin-right: 6px;"/>
 095 145 31 84
 </a>
@@ -414,7 +410,7 @@ HouseClean Customer
 <li class="u-fontWeight700">Синхронизация аккаунта</li>
 <li class="u-fontWeight700">Отчеты по оплатам</li>
 </ul>
-<a class="button" href="https://houseclean.online/features/#business">Организовать уборку</a>
+
 </div>
 </div>
 </div>
@@ -440,7 +436,7 @@ HouseClean Customer
 <li class="u-fontWeight700">SMS отчеты и напоминания</li>
 <li class="u-fontWeight700">Личный кабинет клиента</li>
 </ul>
-<a class="button" href="https://houseclean.online/features/#clients">Просчитать стоимость уборки</a>
+
 </div>
 </div>
 </div>
@@ -465,7 +461,7 @@ HouseClean Customer
 <li class="u-fontWeight700">Указать дату на календаре</li>
 <li class="u-fontWeight700">Дополнительные формы</li>
 </ul>
-<a class="button" href="https://houseclean.online/features/#team">Выбрать команду</a>
+
 </div>
 </div>
 </div>
@@ -506,9 +502,7 @@ HouseClean Customer
 <div class="row centered u-paddingLargest u-paddingRightSmall u-paddingLeftSmall">
 <div class="columns medium-10 large-2 u-marginBottom">
 <a href="https://houseclean.online/" class="siteFooter-logo">
-<svg>
-<use xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-bug"></use>
-</svg>
+<span class="logo"></span>
 </a>
 </div>
 <div class="column small-12 medium-5 large-2 u-marginBottom">
@@ -553,7 +547,7 @@ HouseClean Customer
 <div class="column small-12 medium-10 large-2 u-marginBottom">
 <h4 class="u-colorWhite">Связь</h4>
 <ul class="linkList linkList--light">
-<li><a class="u-colorBlue js-amplitude-click" data-amplitude-location="footer" data-amplitude-name="Clicked Phone Number" href="tel:0951453184">095 145 31 84</a></li>
+<li><a class="u-colorBlue js-amplitude-click" data-amplitude-location="footer" data-amplitude-name="Clicked Phone Number" href="tel:+380951453184">095 145 31 84</a></li>
 <li><a href="mailto:help@houseclean.online">help@houseclean.online</a></li>
 </ul>
 <ul class="socialLinks u-marginTopSmall">
@@ -631,15 +625,18 @@ HouseClean Customer
 <script>
 (function(){
 var widget_id = 881989;
-var lang =(navigator.language || navigator.systemLanguage || navigator.userLanguage ||"ru").substr(0,2).toLowerCase();
-var url ="//widget.siteheart.com/widget/sh/"+ widget_id +"/"+ lang +"/widget.js";
+_shcp =[{widget_id : widget_id}];
+var lang =(navigator.language || navigator.systemLanguage 
+|| navigator.userLanguage ||"ru")
+.substr(0,2).toLowerCase();
+var url ="widget.siteheart.com/widget/sh/"+ widget_id +"/"+ lang +"/widget.js";
 var hcc = document.createElement("script");
 hcc.type ="text/javascript";
 hcc.async =true;
-hcc.src =("https:"== document.location.protocol ?"https":"http")+"://"+ url;
+hcc.src =("https:"== document.location.protocol ?"https":"http")
++"://"+ url;
 var s = document.getElementsByTagName("script")[0];
 s.parentNode.insertBefore(hcc, s.nextSibling);
 })();
-_shcp =[{widget_id : 881989, side : "left", position: "center", template : "green"}];
 </script>
 </body></html>
