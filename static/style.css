@@ -4,6 +4,21 @@
 .siteHeader-logo .logo{width:75px;height:61px;display:inline-block;vertical-align:middle;margin-right:2rem; background-image: url(/static/houseclean-dark.svg); background-size: 60px 60px; background-repeat: no-repeat;}
 .siteHeader-logo .logoDark{width:75px;height:61px;display:inline-block;vertical-align:middle;margin-right:2rem; background-image: url(/static/houseclean-dark.svg); background-size: 60px 60px; background-repeat: no-repeat;}
 .siteFooter-logo .logo{display: inline-block; background-image: url(/static/houseclean-dark.svg); background-size: 60px 60px; background-repeat: no-repeat; width: 60px; height: 60px;}
+.siteHeader-logow { width:205px; }
+
+@media (max-width: 1024px) {
+	.siteHeader-logo .logoDark {
+		margin-top: -20px;
+	}
+}
+
+.siteHeader-right {
+	margin-top: 30px;
+}
+.siteHeader-phone {
+	border-right: none;
+	border-right: 1px solid rgba(255,255,255,.2) !important;
+}
 
 .linkList li a {
 	font-size: 16px;
