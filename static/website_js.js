@@ -1,7 +1,7 @@
 (function($){
 
   var request = new XMLHttpRequest();
-  var url =  "https://secure.houseclean.online/website_details";
+  var url =  "https://secure.houseclean.offline/website_details";
 
   function onAnalyticsReady() {
     if (window.amplitude) {
@@ -130,7 +130,7 @@
     cookie_duration = name[2];
     if(cookie_name !== null && cookie_name.length > 0) {
       if($.cookie != null) {
-        $.cookie(name[1], cookie_name, { expires: cookie_duration, path: '/', domain: '.houseclean.online' } );
+        $.cookie(name[1], cookie_name, { expires: cookie_duration, path: '/', domain: '.houseclean.offline' } );
       } else {
         console.error("Missing jquery-cookie");
       }
